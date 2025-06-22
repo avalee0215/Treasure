@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbf8">
+
+    <!-- Top Bar -->
+    <include layout="@layout/top_bar" />
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="12dp">
+        <include layout="@layout/search_bar" />
+    </LinearLayout>
+
+    <!-- Search Results -->
+    <!-- Scrollable content starts here -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- TextView to display search results count -->
+            <TextView
+                android:id="@+id/resultsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 results related to ''"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/solway_regular" />
+
+            <!-- No Results Layout (hidden initially) -->
+            <LinearLayout
+                android:id="@+id/no_results_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="24dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/no_results_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="But don’t give up the hunt"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222"
+                    android:fontFamily="@font/solway_regular"
+                    android:layout_marginBottom="12dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/no_results_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:overScrollMode="never" />
+
+                <Button
+                    android:id="@+id/no_results_home_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back to Home"
+                    android:fontFamily="@font/solway_regular"
+                    android:textSize="16sp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/white"
+                    android:layout_gravity="end"
+                    android:paddingHorizontal="32dp"
+                    android:paddingVertical="10dp"/>
+            </LinearLayout>
+
+            <!-- RecyclerView for result items -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Bar -->
+    <include layout="@layout/bottom_nav_bar" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefbf8">
+
+    <!-- Top Bar -->
+    <include layout="@layout/top_bar" />
+
+    <TextView
+        android:id="@+id/favourites_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favourites"
+        android:background="#fbf0e8"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/solway_regular"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favourites_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Bottom Navigation -->
+    <include layout="@layout/bottom_nav_bar" />
+</LinearLayout>

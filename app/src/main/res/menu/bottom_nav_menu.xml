@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/heart"
+        android:title="Favourites" />
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/shoppingbag"
+        android:title="Cart" />
+    <item
+        android:id="@+id/nav_none"
+        android:icon="@drawable/ic_invisible"
+        android:title=""
+        android:enabled="false"
+        android:visible="false" />
+</menu>

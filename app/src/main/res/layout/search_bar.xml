@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="15dp"
+    android:paddingHorizontal="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardCornerRadius="50dp"
+        android:backgroundTint="#8A7F64">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:drawableTint="#4c4535"
+            android:fontFamily="@font/solway_regular"
+            android:padding="15dp"
+            android:hint="Search a name..."
+            android:textColor="#f1e4b7"
+            android:textColorHint="#f1e4b7" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

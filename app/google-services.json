@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1068057543477",
+    "project_id": "treasure-10a34",
+    "storage_bucket": "treasure-10a34.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068057543477:android:ecbe0487d04dc2aa2b827c",
+        "android_client_info": {
+          "package_name": "youseesoft.team27.treasure"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFkBCeMmCt93LpMbpxs4d8ZebYJkRlWas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Treasure</string>
+    <string name="your_treasure_is_on_its_way">Your treasure is on its way!!</string>
+    <string name="treasure_app_logo">Treasure app logo</string>
+</resources>
