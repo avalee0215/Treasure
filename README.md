@@ -1,52 +1,71 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/BGseP8Hn)
-# COMPSYS 302 Java Project – Treasure
+# Treasure – Vintage Second-Hand Marketplace App  
+**Treasure** is an Android application designed for users to discover, explore, and purchase unique second-hand and vintage items. The app replicates a small-scale e-commerce platform and was developed as part of a team project for COMPSYS 302.
 
-**Treasure** is a vintage second-hand shop Android application designed for users who want to discover and explore unique vintage and second-hand items. This project was developed as part of the COMPSYS 302 course.
+---
 
-## Features
+## Key Features
 
-- Category-based browsing across:
-  - Electronics & Gadgets
-  - Clothing & Accessories
-  - Home & Decor
-  - Books, Toys & Collections
+### Category Browsing
+- Explore listings by:
+  - Electronics & Gadgets  
+  - Clothing & Accessories  
+  - Home & Decor  
+  - Books, Toys & Collections  
 
-- Favourites page to save and view liked items
+### Favourites Page
+- Save liked items and revisit them anytime  
+- Synced with user account after login
 
-- Shopping Cart:
-  - Add items to cart and manage them locally using `SharedPreferences`
-  - Select items and proceed to checkout
-  - Remove items from the cart
+### Shopping Cart
+- Add, remove, and manage cart items  
+- Use `SharedPreferences` for local storage  
+- Select items and proceed to checkout
 
-- Item detail page with:
-  - Full specifications and description
-  - ViewPager2 image gallery
-  - Zoomable fullscreen image view using `PhotoView`
+### Item Details
+- View full product specifications and descriptions  
+- Image gallery using `ViewPager2`  
+- Zoomable fullscreen image view using `PhotoView`
 
-- Search functionality to find items by keywords or category names
+### Search & Recommendations
+- Search by keywords or category  
+- Personalized “Pick for You” section powered by search history
 
-- Log in / Register page to:
-  - Save favourite items and cart data to the user account
-  - Customize the "Pick for You" section based on search history and activity
+### Authentication
+- Log in or register accounts  
+- Save favourites and cart data per user  
+- Enables personalized content delivery
 
-- Responsive user interface using RecyclerViews and modular layout structure
+### UI/UX
+- Responsive and modular interface using `RecyclerView`  
+- Consistent design across all activity screens
+
+---
 
 ## Tech Stack
 
-- **Language**: Java  
-- **Framework**: Android SDK  
-- **Database**: Firebase Firestore  
+- **Language:** Java  
+- **Framework:** Android SDK  
+- **Database:** Firebase Firestore  
+- **Local Storage:** SharedPreferences  
+- **Image Zoom:** PhotoView  
+- **Image Gallery:** ViewPager2  
 
-## Project Files
+---
 
-You can access the full project from the following Google Drive link:
+## Project Access
 
-[Treasure App Source Code – Google Drive](https://drive.google.com/drive/folders/110uUvl1jONH7kT7qvI3lJZMQEn9lDKXy?usp=sharing)
+📎 [Download Source Code via Google Drive](https://drive.google.com/drive/folders/110uUvl1jONH7kT7qvI3lJZMQEn9lDKXy?usp=sharing)
 
-## Authors
+---
 
-- Chaeeun Lee
-- Salomia Joby
-- Ivory Huang
-- COMPSYS 302 Team 27 – University of Auckland
+## 👩‍💻 Authors
 
+- Chaeeun Lee (Ava Lee)  
+- Salomia Joby  
+- Ivory Huang  
+- **Team 27** – COMPSYS 302, University of Auckland
+
+---
+
+> This project was developed for educational purposes as part of the COMPSYS 302 course.  
+> For portfolio or demo inquiries, please contact the authors.
