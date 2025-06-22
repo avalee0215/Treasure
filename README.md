@@ -58,7 +58,7 @@
 
 ---
 
-## 👩‍💻 Authors
+## Authors
 
 - Chaeeun Lee (Ava Lee)  
 - Salomia Joby  
